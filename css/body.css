@@ -1,0 +1,133 @@
+ body, html {    
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400px;
+    line-height: 1.8em;
+    color: grey;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    /* justify-content: left; */
+    list-style: none;
+    float: right;
+}
+
+a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    color: #000;
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*  fixed = parrallax 
+        scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url("../assets/img5.jpeg");
+    min-height: 100%;
+    top: 0px;
+}
+
+.pimg2 {
+    background-image: url("../assets/img1.jpg");
+    min-height: 500px;
+}
+
+.pimg3 {
+    background-image: url("../assets/img4.jpg");
+    min-height: 500px;
+} 
+ 
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: white;
+    color: grey;
+    top: 50px;
+}
+
+.section-dark {
+    background-color: black;
+    color: lightgrey;
+}
+
+/* Image 5 for the about me section */
+.circle {
+    border-radius: 100px;
+    border: 5px;
+    border-color: black;
+}
+
+.left {
+    position: relative;
+    top: 50px;
+    right: 500px;
+}
+
+.right {
+    position: relative;
+    top: -220px;
+    left: -170px;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width: 568px) {
+    .pimg1, pimg2, .pimg3, .ptext {
+        background-attachment: scroll;
+    }
+}
