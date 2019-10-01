@@ -93,18 +93,45 @@ a:hover {
     border-color: black;
 }
 
-.left {
-    position: relative;
-    top: 50px;
-    right: 500px;
+header {
+    margin: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-dlex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
 }
 
-.right {
-    position: relative;
-    top: -220px;
-    left: -170px;
+header div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
 }
 
+header div img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 400px) {
+    header div {
+        margin: 0;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+
+img:hover {
+    opacity: .5;
+    transition: .9s
+}
 .ptext {
     position: absolute;
     top: 50%;
@@ -126,8 +153,8 @@ a:hover {
     background-color: transparent;
 }
 
-@media(max-width: 568px) {
+/* @media(max-width: 568px) {
     .pimg1, pimg2, .pimg3, .ptext {
         background-attachment: scroll;
     }
-}
+} */
