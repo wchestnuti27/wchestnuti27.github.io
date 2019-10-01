@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Will Chestnut II</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link ref="text/css" rel="stylesheet" href='css/main.css'>
 </head>
+
 <body>
     <div class="navbar">
         <ul class="nav">
@@ -14,88 +17,140 @@
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolios</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>   
+        </ul>
     </div>
+
     <!-- Home section -->
-    <p><a name="home"></a></p> 
+    <p><a name="home"></a></p>
     <div class="pimg1">
         <div class="ptext">
             <span class="border">
-                Will Chestnut II  -  Junior Web Developer
+                Will Chestnut II - Junior Web Developer
             </span>
         </div>
     </div>
 
     <!-- About Me Section -->
-    <p><a name="about"></a></p>
+    <span id="about"></span>
     <section class="section section-light">
         <h2><b>About Me</b></h2>
         <br>
         <img src="../Portfolio/assets/Pic for portfolio.jpg" class="circle" width="250" height="250">
         <br>
-        <p>Hi, My name is Will.  I'm currently enrolled in Eleven Fifty Academy's accelerated Javascript program. With my 20+ years of customer service experience, I'm used to assisting customers and solving thier issues. But with the training that I'm learning in this course, I can now use my problem solving skills in the world of web development.  I'm very excited to see where this new journey takes me. Please sure to take a look at my work below and let me know what you think. My contact info will be below.
-    
-        
-        
+        <br>
+        <p>Hi, My name is Will. I'm currently enrolled in Eleven Fifty Academy's accelerated Javascript program. With my
+            20+ years of customer service experience, I'm used to assisting customers and solving thier issues. But with
+            the training that I'm learning in this course, I can now use my problem solving skills in the world of web
+            development. I'm very excited to see where this new journey takes me. Please sure to take a look at my work
+            below and let me know what you think. My contact info will be below.
+
     </section>
     <div class="pimg2">
-            <div class="ptext">
-                <span class="border trans">
-                    <!-- Image Two Text -->
-                </span>
-            </div>
-    </div>   
-    
-    
-    
-    
+        <div class="ptext">
+            <span class="border trans">
+                <!-- Image Two Text -->
+            </span>
+        </div>
+    </div>
+
     <!-- Portfolio Section -->
+    <span id="portfolio"></span>
     <section class="section section-dark">
-    <p><a name="portfolio"></a></p>
-    <h2>Portfolio</h2>
-        
-        <div>
-            <div><a href="https://wchestnuti27.github.io/Static-Layout-Project/"><img src="../Portfolio/assets/static layout.png" height= "275" width= "275"</div>
-            <div><a href="https://codepen.io/wchestnuti27/pen/gOYdQXd?editors=1100"><img src="../Portfolio/assets/CSS Creature.png" height= "275" width= "275"</div>
-        </header>
 
-<!-- put portfolio pic 3 here -->
-                
+        <section id="projects">
+                <h2 class="projectsTitle" style="text-align: center; font-size: 35px; font-family: 'Montserrat', sans-serif;">
+                    Portfolio</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6>
+                                <a href="https://wchestnuti27.github.io/Static-Layout-Project/"><img
+                                    src="../Portfolio/assets/static layout.png" height="275" width="275">
+                        </div>
+                        <div class="col-6">
+                                <a href="https://codepen.io/wchestnuti27/pen/gOYdQXd?editors=1100"><img
+                                    src="../Portfolio/assets/CSS Creature.png" height="275" width="275">    
+                        </div>
+                    </div>
+                </div>
+            </section>
     </section>
+
+
     <div class="pimg3">
-            <div class="ptext">
-                <span class="border trans">
-                </span>
-            </div>
-    </div>   
-            
-        
-    
-    <!-- Contact Section -->
-        <section class="section section-dark">
-        <p><a name="contact"></a></p>
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/chestnut2dev@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your name">
-            <input type="email" name="_replyto" placeholder="Your email">
-            <input type="hidden" name="_subject" value="Website contact" />
-            <textarea name="message" placeholder="Your message"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="submit" value="Send">
-        </form>
-        </form>
-        </section>
-        <div class="pimg1">
-            <div class="ptext">
-                <span class="border">
-                    <!-- Footer section -->
-                    footer
-                </span>
-            </div>
-        </div>   
+        <!-- <div class="ptext">
+                    <span class="border trans">
+                    </span>
+                </div> -->
+    </div>
+
+    <span id="contact"></span>
+<!-- contact section -->
+    <section class="section section-dark">
+            <section id="contact">
+                    <div class="container">
+                        <br>
+                        <br>
+                        <h2 class="text-center text-uppercase">Contact Me</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="https://formspree.io/maynard.zach23@gmail.com" method="POST">
+                                    <div class="control-group">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                                                data-validation-required-message="Please enter your name" name="name">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="form-group">
+                                            <label>Email Address</label>
+                                            <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                                                data-validation-required-message="Please enter your email" name="_replyto">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required
+                                                data-validation-required-message="Please leave a message" name="message"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div id="success"></div>
+                                        <button type="submit" class="btn btn-lg btn-black">
+                                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </section>
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                <footer>
+                Will Chestnut II         
+                </footer>
+            </span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
 </body>
+
 </html>
-        
-
-        
-
