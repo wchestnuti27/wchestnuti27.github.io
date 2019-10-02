@@ -86,12 +86,12 @@ a:hover {
     color: lightgrey;
 }
 
-/* Image 5 for the about me section */
+/* Image 5 for the about me section
 .circle {
     border-radius: 100px;
     border: 5px;
     border-color: black;
-}
+} */
 
 @media screen and (max-width: 400px) {
     header div {
