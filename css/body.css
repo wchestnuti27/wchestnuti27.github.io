@@ -134,8 +134,11 @@ img:hover {
     background-color: transparent;
 }
 
-@media(max-width: 400px) {
-    .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext {
-        background-attachment: scroll;
+@media screen and (max-width: 400px) {
+    .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext, .border, .nav, .navbar, .span {
+    width: 400px;
+    background-attachment: scroll; 
+    size: 200px;
     }
-}
+} 
+
