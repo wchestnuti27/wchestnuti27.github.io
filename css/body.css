@@ -3,7 +3,7 @@
     margin: 0;
     font-size: 16px;
     font-family: "Arial", sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 1.8em;
     color: grey;
 }
@@ -39,14 +39,16 @@ a {
 
 a:hover {
     color: #000;
-}
+} 
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1, .pimg2, .pimg3, .pimg4 {
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+   
+
 
     /*  fixed = parrallax 
         scroll = normal
@@ -57,19 +59,23 @@ a:hover {
 .pimg1 {
     background-image: url("../assets/img5.jpeg");
     min-height: 100%;
-    top: 0px;
 }
 
 .pimg2 {
     background-image: url("../assets/img1.jpg");
-    min-height: 100%;
+    min-height: 500px;
 }
 
 .pimg3 {
     background-image: url("../assets/img4.jpg");
-    min-height: 100%;
+    min-height: 550px;
 } 
- 
+
+.pimg4 {
+    background-image: url("../assets/moon-1807743_960_720.jpg");
+    min-height: 550px;
+} 
+
 .section {
     text-align: center;
     padding: 50px 80px;
@@ -78,12 +84,21 @@ a:hover {
 .section-light{
     background-color: white;
     color: grey;
-    top: 50px;
+}
+
+.icons {
+    font-size: 35px;
+}
+
+.resume{
+    font-size: 50px;
 }
 
 .section-dark {
     background-color: black;
     color: lightgrey;
+    height: 100%;
+    top: 0px;
 }
 
 /* Image 5 for the about me section
@@ -93,21 +108,12 @@ a:hover {
     border-color: black;
 } */
 
-@media screen and (max-width: 400px) {
-    header div {
-        margin: 0;
-    }
-    header {
-        padding: 0;
-    }
-}
-
-
 img:hover {
     opacity: .5;
     transition: .9s
 }
-.ptext {
+
+.name1 {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -118,18 +124,18 @@ img:hover {
     text-transform: uppercase;
 }
 
-.ptext .border {
+.name1 .border {
     background-color: #111;
     color: #fff;
     padding: 20px;
 }
 
-.ptext .border.trans {
+.name1 .border.trans {
     background-color: transparent;
 }
 
-/* @media(max-width: 568px) {
-    .pimg1, pimg2, .pimg3, .ptext {
+@media(max-width: 400px) {
+    .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext {
         background-attachment: scroll;
     }
-} */
+}
