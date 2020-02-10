@@ -6,6 +6,7 @@
     font-weight: 400;
     line-height: 1.8em;
     color: grey;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -122,23 +123,26 @@ img:hover {
     font-size: 15px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    flex-wrap: wrap;
 }
 
 .name1 .border {
     background-color: #111;
     color: #fff;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .name1 .border.trans {
     background-color: transparent;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 400px) {
     .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext, .border, .nav, .navbar, .span {
     width: 400px;
     background-attachment: scroll; 
-    size: 200px;
+    size: 100px;
     }
 } 
 
