@@ -98,7 +98,7 @@ a:hover {
 .section-dark {
     background-color: black;
     color: lightgrey;
-    height: 100%;
+    height: 150%;
     top: 0px;
 }
 
@@ -139,10 +139,15 @@ img:hover {
 }
 
 @media screen and (max-width: 400px) {
-    .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext, .border, .nav, .navbar, .span {
-    width: 400px;
-    background-attachment: scroll; 
+    .navbar, .pimg1, .pimg2, .pimg3, .pimg, .ptext, .border, .nav, .navbar, .span, .section-dark, .container portfolio {
+    width: 150px;
+    height: 150px
+    background-attachment: fixed; 
     size: 100px;
     }
 } 
+
+.btn {
+    font-size: 30px;
+}
 
