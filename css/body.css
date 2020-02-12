@@ -74,7 +74,7 @@ a:hover {
 
 .pimg4 {
     background-image: url("../assets/moon-1807743_960_720.jpg");
-    min-height: 550px;
+    min-height: 460px;
 } 
 
 .section {
@@ -99,6 +99,13 @@ a:hover {
     background-color: black;
     color: lightgrey;
     height: 150%;
+    top: 0px;
+}
+
+.section-dark1 {
+    background-color: black;
+    color: lightgrey;
+    height: 105%;
     top: 0px;
 }
 
@@ -149,5 +156,10 @@ img:hover {
 
 .btn {
     font-size: 30px;
+}
+
+.carousel-inner img {
+    width: 285px;
+    height: 285px;
 }
 
